@@ -152,6 +152,9 @@ khh:AddButton({text = 'Rapid suit off',state = false,callback = function(s)
 	Data3.Mark2.Acceleration = 310
 	Data3.Mark2.Deceleration = 150
 	Data3.Mark2.maxSpeed = 310
+	Data3.WarMachine1.Acceleration = 310
+	Data3.WarMachine1.Deceleration = 150
+	Data3.WarMachine1.maxSpeed = 310
     
 end})
 
