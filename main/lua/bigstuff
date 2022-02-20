@@ -490,6 +490,74 @@ end
 end
 end})
 
+ff:AddList({text = "Select part", flag = "casuit", value = "Send part", values = {"UpperTorso", "LeftUpperArm", "RightUpperArm", "RightLowerArm", "LeftLowerArm", "LeftHand", "RightHand", "LowerTorso", "RightupperLeg", "LeftUpperLeg", "RightLowerLeg", "LeftLowerLeg", "RightFoot", 
+"LeftFoot", "Mask", "Helmet"}, callback = function(suit)
+    
+    if suit == "UpperTorso" then
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('UpperTorso')
+end
+    
+    if suit == "LeftUpperArm" then
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftUpperArm')
+end
+    
+    if suit == "RightUpperArm" then
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightUpperArm')
+end
+    
+    if suit == "RightLowerArm" then
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightLowerArm')
+end
+    
+    if suit == "LeftLowerArm" then
+        for v = 1, 15 do
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftLowerArm')
+        end
+end
+    
+    if suit == "LeftHand" then
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftHand')
+end
+    
+    if suit == "RightHand" then
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightHand')
+end
+    
+    if suit == "LowerTorso" then
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LowerTorso')
+end
+    
+    if suit == "RightupperLeg" then
+ game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightUpperLeg')
+end
+    
+    if suit == "LeftUpperLeg" then
+game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftUpperLeg')
+end
+    
+    if suit == "RightLowerLeg" then
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightLowerLeg')
+end
+    
+    if suit == "LeftLowerLeg" then
+       game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftLowerLeg')
+end
+    
+    if suit == "RightFoot" then
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightFoot')
+end
+    
+    if suit == "LeftFoot" then
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftFoot')
+end
+if suit == "Mask" then
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('Mask')
+end
+if suit == "Helmet" then
+        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('Helmet')
+end
+end})
+
 ff:AddButton({text = "Instant Suit", flag = "usuit", callback = function()
     game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftFoot')
     game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftHand')
