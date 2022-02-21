@@ -6,6 +6,7 @@ local khh = mainchet:AddFolder("Rapid Suit")
 local Teleports = library:CreateWindow("Stuff")
 local kak = Teleports:AddFolder("Teleports")
 local jka = Teleports:AddFolder("Admin")
+local dhg = Teleports:AddFolder("Snap (not Working)")
 local uni = library:CreateWindow("Universal")
 
     pee:AddToggle({text = 'Fling Punch',state = false,callback = function(s)
@@ -592,6 +593,11 @@ ff:AddButton({text = "Instant Suit", flag = "usuit", callback = function()
     game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('UpperTorso')
     game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftUpperLeg')
 end})
+
+dhg:AddBox({text = "Snap players", flag = "usuit", callback = function()
+    
+end})
+
 
 jka:AddButton({text = "Inf Yeild", flag = "usuit", callback = function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
