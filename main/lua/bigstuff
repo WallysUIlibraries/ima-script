@@ -1,5 +1,5 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/WallysUIlibraries/Ul-libraries/main/ui%20v6", true))()
-local mainchet = library:CreateWindow("Ims test script")
+local mainchet = library:CreateWindow("EnderServers IMS Script")
 local pee = mainchet:AddFolder("Main")
 local ff = mainchet:AddFolder("Suit Stuff")
 local khh = mainchet:AddFolder("Rapid Suit")
@@ -200,7 +200,7 @@ pee:AddToggle({text = 'Anti-fling',state = false,callback = function(s)
 end})
 
 
-    pee:AddButton({text = "Infinite Power", flag = "callall", callback = function()
+    ff:AddButton({text = "Infinite Power", flag = "callall", callback = function()
     pcall(function()
 game:service('RunService').Stepped:connect(function(s)
  game.Players.LocalPlayer.Character.Suit.Status.Power.Value = true
@@ -211,7 +211,7 @@ end)
     end})
 
 
-pee:AddButton({text = "Strong blasts", flag = "sblasts", callback = function()
+ff:AddButton({text = "Strong blasts", flag = "sblasts", callback = function()
     for v = 1, 5 do
         local clone = game.Players.LocalPlayer.Backpack.suitControl.Client:Clone()
         clone.Parent = game.Players.LocalPlayer.Backpack.suitControl
@@ -219,7 +219,7 @@ pee:AddButton({text = "Strong blasts", flag = "sblasts", callback = function()
 end})
 
 
-pee:AddButton({text = "Unbreakable Suit", flag = "usuit", callback = function()
+ff:AddButton({text = "Unbreakable Suit", flag = "usuit", callback = function()
     game.Players.LocalPlayer.Character.Suit.Status.damageTaken:Destroy()
 	game.Players.LocalPlayer.Character.Suit.Status.damageTaken:Destroy()
 	game.Players.LocalPlayer.Character.Suit.Status.damageTaken:Destroy()
@@ -230,9 +230,60 @@ pee:AddButton({text = "Unbreakable Suit", flag = "usuit", callback = function()
 	game.Players.LocalPlayer.Character.Suit.Status.damageTaken:Destroy()
 end})
 
-pee:AddButton({text = "No Mask boundary", flag = "usuit", callback = function()
+ff:AddButton({text = "No Mask boundary", flag = "usuit", callback = function()
     game.Players.LocalPlayer.Character.Suit.Mask.Eyes:Destroy()
 end})
+
+ff:AddButton({text = "Chrome All (Half Working)", flag = "sblasts", callback = function()
+game.Players.LocalPlayer.Character.Suit.UpperTorso.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.UpperTorso.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.UpperTorso.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.UpperTorso.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.UpperTorso.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.UpperTorso.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.UpperTorso.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.UpperTorso.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftUpperArm.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftUpperArm.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftUpperArm.Part:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftUpperArm.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftUpperArm.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightUpperArm.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightUpperArm.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightUpperArm.Part:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightUpperArm.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightUpperArm.Union:Destroy() 
+game.Players.LocalPlayer.Character.Suit.RightLowerArm.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightLowerArm.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftLowerArm.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftLowerArm.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftHand.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftHand.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftHand.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightHand.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightHand.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightHand.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LowerTorso.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LowerTorso.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LowerTorso.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LowerTorso.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightUpperLeg.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightUpperLeg.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightUpperLeg.Part:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftUpperLeg.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftUpperLeg.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftUpperLeg.Part:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightLowerLeg.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightLowerLeg.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightLowerLeg.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftLowerLeg.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftLowerLeg.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftLowerLeg.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.RightFoot.Union:Destroy()
+game.Players.LocalPlayer.Character.Suit.LeftFoot.Union:Destroy()
+end})
+
+
 
 kak:AddButton({text = "Avengers", flag = "usuit", callback = function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-333.851898, 796.748901, -1894.92798)
@@ -279,7 +330,7 @@ end})
 
 
 ff:AddList({text = "Suits", flag = "casuit", value = "Select a Suit", values = {"Mark2", "Mark3", "Mark4", "Mark6", "Mark9", "Mark12", "Mark13", "Mark14", "Mark19", "Mark20", "Mark21", 
-"Mark23", "Mark27", "Mark28", "Mark30", "Mark31", "Mark33", "Mark40", "Mark42", "WarMachine"}, callback = function(suit)
+"Mark23", "Mark27", "Mark28", "Mark30", "Mark31", "Mark33", "Mark40", "Mark42","WarMachine"}, callback = function(suit)
     
     if suit == "Mark2" then
         for v = 1, 15 do
@@ -386,8 +437,102 @@ end
     if suit == "Mark42" then
         for v = 1, 15 do
         game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer("Mark42", tick(), 0)
+        wait(1)
+        local Player = game:GetService("Players").LocalPlayer
+Player.Backpack.ironMan.Assets.Events.callSuit:FireServer('Mark42')
+Player.Character.Suit.Status.Model.Value = 'WarMachine1'
+Player.Character.Suit.UpperTorso.Light.Name = 'Reactor'
+local Character = Player.Character
+local P1 = Instance.new("ParticleEmitter")
+local P2 = Instance.new("ParticleEmitter")
+P1.Name = 'repulsorFire'
+P2.Name = 'repulsorSparks'
+P1.Texture = 'http://www.roblox.com/asset/?id=0'
+P2.Texture = 'http://www.roblox.com/asset/?id=0'
+local Sound1 = Instance.new("Sound")
+Sound1.SoundId = 'http://www.roblox.com/asset/?id=97179333'
+Sound1.Looped = true
+local Sound2 = Instance.new("Sound")
+Sound2.SoundId = 'http://www.roblox.com/asset/?id=97179333'
+Sound2.Looped = true
+local Sound3 = Instance.new("Sound")
+Sound3.SoundId = 'http://www.roblox.com/asset/?id=97179333'
+Sound3.Looped = true
+local Sound4 = Instance.new("Sound")
+Sound4.SoundId = 'http://www.roblox.com/asset/?id=97179333'
+Sound4.Looped = true
+local Sound5 = Instance.new("Sound")
+Sound5.SoundId = 'rbxassetid://1010380770'
+local Sound6 = Instance.new("Sound")
+Sound6.SoundId = 'rbxassetid://1010380770'
+local Sound7 = Instance.new("Sound")
+Sound7.SoundId = 'rbxassetid://1010380770'
+local Sound8 = Instance.new("Sound")
+Sound8.SoundId = 'rbxassetid://1010380770'
+local Attachment = Instance.new("Attachment")
+Attachment.Name = 'Exhaust'
+local R1 = Instance.new("Sound")
+R1.SoundId = 'rbxasset://sounds/Launching rocket.wav'
+R1.Name = 'repulsor1'
+local R2 = Instance.new("Sound")
+R2.SoundId = 'rbxassetid://618826713'
+R2.Name = 'repulsor2'
+local R3 = Instance.new("Sound")
+R3.SoundId = 'rbxasset://sounds/Launching rocket.wav'
+R3.Name = 'repulsor1'
+local R4 = Instance.new("Sound")
+R4.SoundId = 'rbxassetid://618826713'
+R4.Name = 'repulsor2'
+local R5 = Instance.new("Sound")
+R5.SoundId = 'rbxasset://sounds/Launching rocket.wav'
+R5.Name = 'repulsor1'
+local R6 = Instance.new("Sound")
+R6.SoundId = 'rbxassetid://618826713'
+R6.Name = 'repulsor2'
+local R7 = Instance.new("Sound")
+R7.SoundId = 'rbxasset://sounds/Launching rocket.wav'
+R7.Name = 'repulsor1'
+local R8 = Instance.new("Sound")
+R8.SoundId = 'rbxassetid://618826713'
+R8.Name = 'repulsor2'
+local R9 = Instance.new("Sound")
+R9.SoundId = 'rbxasset://sounds/Launching rocket.wav'
+R9.Name = 'repulsor1'
+local R10 = Instance.new("Sound")
+R10.SoundId = 'rbxassetid://618826713'
+R10.Name = 'repulsor2'
+Sound1.Name = 'Fly'
+Sound2.Name = 'Fly'
+Sound3.Name = 'Fly'
+Sound4.Name = 'Fly'
+Sound5.Name = 'flyStart'
+Sound6.Name = 'flyStart'
+Sound7.Name = 'flyStart'
+Sound8.Name = 'flyStart'
+Sound1.Parent = Character.Suit.LeftHand.Main
+Sound2.Parent = Character.Suit.RightHand.Main
+Sound3.Parent = Character.Suit.LeftFoot.Main
+Sound4.Parent = Character.Suit.RightFoot.Main
+Sound5.Parent = Character.Suit.LeftHand.Main
+Sound6.Parent = Character.Suit.RightHand.Main
+Sound7.Parent = Character.Suit.LeftFoot.Main
+Sound8.Parent = Character.Suit.RightFoot.Main
+R1.Parent = Character.Suit.UpperTorso.Main
+R2.Parent = Character.Suit.UpperTorso.Main
+R3.Parent = Character.Suit.LeftHand.Main
+R4.Parent = Character.Suit.LeftHand.Main
+R5.Parent = Character.Suit.RightHand.Main
+R6.Parent = Character.Suit.RightHand.Main
+R7.Parent = Character.Suit.LeftHand.Main
+R8.Parent = Character.Suit.LeftHand.Main
+R9.Parent = Character.Suit.RightHand.Main
+R10.Parent = Character.Suit.RightHand.Main
+Attachment.Parent = Character.Suit.UpperTorso.Reactor
+P1.Parent = Character.Suit.UpperTorso.Reactor.Exhaust
+P2.Parent = Character.Suit.UpperTorso.Reactor.Exhaust
         end
 end
+
     if suit == "WarMachine" then
         for v = 1, 15 do
         game:GetService("Players").LocalPlayer.Backpack.ironMan.Assets.Events.callSuit:FireServer("WarMachine1", tick(), 0)
