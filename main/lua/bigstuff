@@ -706,7 +706,7 @@ game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('Le
 end
     
     if suit == "RightLowerLeg" then
-        game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('RightLowerLeg')
+         game.Players.LocalPlayer.Character.Suit.RightUpperLeg:Destroy()
 end
     
     if suit == "LeftLowerLeg" then
@@ -719,6 +719,72 @@ end
     
     if suit == "LeftFoot" then
         game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftFoot')
+end
+end})
+
+ff:AddList({text = "Delete piece", flag = "casuit", value = "Send part", values = {"Mask", "Helmet", "UpperTorso", "LeftUpperArm", "RightUpperArm", "RightLowerArm", "LeftLowerArm", "LeftHand", "RightHand", "LowerTorso", "RightupperLeg", "LeftUpperLeg", "RightLowerLeg", "LeftLowerLeg", "RightFoot", 
+"LeftFoot"}, callback = function(suit)
+
+if suit == "Mask" then
+        game.Players.LocalPlayer.Character.Suit.Mask:Destroy()
+end
+if suit == "Helmet" then
+        game.Players.LocalPlayer.Character.Suit.Helmet:Destroy()
+end
+    if suit == "UpperTorso" then
+        game.Players.LocalPlayer.Character.Suit.UpperTorso:Destroy()
+end
+    
+    if suit == "LeftUpperArm" then
+game.Players.LocalPlayer.Character.Suit.LeftUpperArm:Destroy()
+end
+    
+    if suit == "RightUpperArm" then
+game.Players.LocalPlayer.Character.Suit.RightUpperArm:Destroy()
+end
+    
+    if suit == "RightLowerArm" then
+game.Players.LocalPlayer.Character.Suit.RightLowerArm:Destroy()
+end
+    
+    if suit == "LeftLowerArm" then
+       game.Players.LocalPlayer.Character.Suit.LeftLowerArm:Destroy()
+end
+    
+    if suit == "LeftHand" then
+game.Players.LocalPlayer.Character.Suit.LeftHand:Destroy()
+end
+    
+    if suit == "RightHand" then
+game.Players.LocalPlayer.Character.Suit.RightHand:Destroy()
+end
+    
+    if suit == "LowerTorso" then
+game.Players.LocalPlayer.Character.Suit.LowerTorso:Destroy()
+end
+    
+    if suit == "RightupperLeg" then
+ game.Players.LocalPlayer.Character.Suit.RightUpperLeg:Destroy()
+end
+    
+    if suit == "LeftUpperLeg" then
+game.Players.LocalPlayer.Character.Suit.LeftUpperLeg:Destroy()
+end
+    
+    if suit == "RightLowerLeg" then
+        game.Players.LocalPlayer.Character.Suit.RightLowerLeg:Destroy()
+end
+    
+    if suit == "LeftLowerLeg" then
+       game.Players.LocalPlayer.Character.Suit.LeftLowerLeg:Destroy()
+end
+    
+    if suit == "RightFoot" then
+        game.Players.LocalPlayer.Character.Suit.RightFoot:Destroy()
+end
+    
+    if suit == "LeftFoot" then
+        game.Players.LocalPlayer.Character.Suit.LeftFoot:Destroy()
 end
 end})
 
