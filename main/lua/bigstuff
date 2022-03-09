@@ -8,6 +8,7 @@ local kak = Teleports:AddFolder("Teleports")
 local jka = Teleports:AddFolder("Admin")
 local dhg = Teleports:AddFolder("Snap (not Working)")
 local uni = library:CreateWindow("Universal")
+local Cred = library:CreateWindow("Credits")
 
     pee:AddToggle({text = 'Fling Punch',state = false,callback = function(s)
     local r = require(game:service('ReplicatedStorage').suitData)
@@ -812,6 +813,21 @@ end})
 
 jka:AddButton({text = "Inf Yeild", flag = "usuit", callback = function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end})
+
+Cred:AddLabel({text = "EnderWolf (Creator)", flag = "usuit", callback = function()
+end})
+
+Cred:AddLabel({text = "Yos (giving good ideas)", flag = "usuit", callback = function()
+end})
+
+Cred:AddLabel({text = "Manu_el (testing script)", flag = "usuit", callback = function()
+end})
+
+Cred:AddLabel({text = "Aj (Telling Hoes to Shut up)", flag = "usuit", callback = function()
+end})
+
+Cred:AddLabel({text = "Strik (Fixing MK 42)", flag = "usuit", callback = function()
 end})
 
 uni:AddBind({text = "UI Bind", key = "LeftControl", save = true, callback = function() library:Close() end})
