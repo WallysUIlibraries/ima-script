@@ -235,6 +235,10 @@ ff:AddButton({text = "No Mask boundary", flag = "usuit", callback = function()
     game.Players.LocalPlayer.Character.Suit.Mask.Eyes:Destroy()
 end})
 
+ff:AddButton({text = "God Mode", flag = "usuit", callback = function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/HD81s05p'),true))()
+end})
+
 ff:AddButton({text = "Chrome All (Half Working)", flag = "sblasts", callback = function()
 game.Players.LocalPlayer.Character.Suit.UpperTorso.Union:Destroy()
 game.Players.LocalPlayer.Character.Suit.UpperTorso.Union:Destroy()
@@ -806,7 +810,19 @@ ff:AddButton({text = "Instant Suit", flag = "usuit", callback = function()
     game.Players.LocalPlayer.Backpack.ironMan.Assets.Events.callPiece:FireServer('LeftUpperLeg')
 end})
 
-dhg:AddBox({text = "Snap players", flag = "usuit", callback = function()
+dhg:AddBox({text = "players name", flag = "usuit", callback = function()
+    
+end})
+
+dhg:AddButton({text = "snap", flag = "usuit", callback = function()
+    
+end})
+
+dhg:AddButton({text = "Fling", flag = "usuit", callback = function()
+    
+end})
+
+dhg:AddButton({text = "Roket", flag = "usuit", callback = function()
     
 end})
 
